@@ -12,7 +12,7 @@ const App = () => {
 
   const getFilms = async () => {
     const response = await axios.get(
-      '/film-locations-json-all-records_03-19-2020.json'
+      'https://c2t-cabq-open-data.s3.amazonaws.com/film-locations-json-all-records_03-19-2020.json'
     );
     setResults(response.data);
     setLoading(false);
