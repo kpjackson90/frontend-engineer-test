@@ -16,7 +16,12 @@ const Map = ({
   film
 }) => {
   return (
-    <LoadScript id='script-loader' googleMapsApiKey={keys.GOOGLE_MAPS_API_KEY}>
+    //I would not normally load Env variables directly here but seems like heroku has an issue going on
+    //so placed it here in interest of time and just for this test
+    <LoadScript
+      id='script-loader'
+      googleMapsApiKey='AIzaSyDS0jYIBmI05t95nsup2FnFrobB7GHqoGw'
+    >
       <GoogleMap
         id='marker-example'
         mapContainerStyle={mapContainerStyle}
